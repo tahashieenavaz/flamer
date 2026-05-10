@@ -7,7 +7,7 @@ class StochasticDepth(torch.nn.Module):
         assert probability <= 1.0 and probability >= 0, "0 <= prob <= 1"
         self.keep_probability = 1 - probability
 
-    def __intact_condition(self, x: torch.Tensor) -> bool:
+    def __intact_condition(self) -> bool:
         return not self.training or self.keep_probability == 1.0
 
     def __get_mask(self, x: torch.Tensor) -> torch.Tensor:
@@ -15,7 +15,8 @@ class StochasticDepth(torch.nn.Module):
         return torch.rand(batch_size, 1, 1, 1)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        if self.__intact_condition(x):
+        if self.__intact_condition():
             return x
+
         mask = self.__get_mask(x)
         return x * mask / self.keep_probability
