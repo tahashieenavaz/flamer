@@ -1,12 +1,18 @@
 import torch
+from typing import Type
 
 
 class SqueezeExcitation(torch.nn.Module):
-    def __init__(self, in_channels: int, squeeze_channels: int):
+    def __init__(
+        self,
+        in_channels: int,
+        squeeze_channels: int,
+        activation: Type[torch.nn.Module] = torch.nn.SiLU,
+    ):
         super().__init__()
         self.alpha = torch.nn.Conv2d(in_channels, squeeze_channels, kernel_size=1)
         self.beta = torch.nn.Conv2d(squeeze_channels, in_channels, kernel_size=1)
-        self.activation = torch.nn.SiLU(inplace=True)
+        self.activation = activation()
         self.pool = torch.nn.AdaptiveAvgPool2d(1)
 
     def __get_scale(self, x: torch.Tensor) -> float:
