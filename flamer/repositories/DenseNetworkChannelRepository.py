@@ -1,4 +1,4 @@
-class DensenetChannelRepository:
+class DenseNetworkChannelRepository:
     densense121 = [
         [64] * 2,
         [128] * 1,

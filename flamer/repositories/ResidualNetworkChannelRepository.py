@@ -1,4 +1,4 @@
-class ResnetChannelRepository:
+class ResidualNetworkChannelRepository:
     resnet18 = [[64] * 3, [128] * 2, [256] * 2, [512] * 2]
     resnet34 = [4 * [64], 4 * [128], 6 * [256], 3 * [512]]
     resnet50 = [[64] * 4, [128] * 4, [256] * 6, [512] * 3]
