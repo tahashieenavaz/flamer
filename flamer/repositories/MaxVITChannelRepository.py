@@ -1,5 +1,5 @@
 class MaxVITChannelRepository:
-    main = [
+    maxvit = [
         [64] * 1,
         [256] * 2,
         [64] * 2,
