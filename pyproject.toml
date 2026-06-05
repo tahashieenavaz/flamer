@@ -20,7 +20,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = ["torch"]
-keywords = ["deep learning", "pytorch"]
+keywords = ["deep learning", "pytorch", "modules"]
 license = { file = "LICENSE" }
 urls = { Homepage="https://github.com/tahashieenavaz/flamer", Repository="https://github.com/tahashieenavaz/flamer", Documentation="https://github.com/tahashieenavaz/flamer#readme" }
 
