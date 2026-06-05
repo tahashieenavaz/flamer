@@ -13,11 +13,9 @@ class HLGaussLoss(torch.nn.Module):
         self.max_value = max_value
         self.num_bins = num_bins
 
-        # these are edges, therefore for `num_bin` bins we need `num_bin + 1` edges
         support = torch.linspace(min_value, max_value, num_bins + 1)
         self.register_buffer("support", support, persistent=False)
 
-        # centers are in the middle of two edges
         centers = (support[:-1] + support[1:]) / 2
         self.register_buffer("centers", centers, persistent=False)
 
@@ -37,10 +35,6 @@ class HLGaussLoss(torch.nn.Module):
     def forward(
         self, logits: torch.Tensor, target: torch.Tensor = None, reduction: str = "mean"
     ) -> torch.Tensor:
-        """
-        If `target` is provided, computes the HL-Gauss Cross Entropy Loss.
-        If `target` is None, computes the expected continuous value from the logits (Inference mode).
-        """
         assert (
             logits.shape[-1] == self.num_bins
         ), f"Expected {self.num_bins} logits, got {logits.shape[-1]}"
