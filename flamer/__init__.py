@@ -1,3 +1,7 @@
+from importlib.metadata import version
+
+__version__ = version("baloot")
+
 from .drl import HLGaussLoss
 from .image import LayerNorm2d
 from .image import SqueezeExcitation
