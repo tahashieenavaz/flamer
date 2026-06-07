@@ -2,18 +2,18 @@ from importlib.metadata import version
 
 __version__ = version("baloot")
 
-from .drl import HLGaussLoss
+from .reinforcement_learning import HLGaussLoss
 from .image import LayerNorm2d
 from .image import SqueezeExcitation
 from .loss import BalancedSoftmaxLoss
 from .loss import LearnableLogitNormLoss
 from .loss import LogitNormLoss
 from .stochastic import StochasticDepth
-from .repository import AlexNetworkChannelRespository
-from .repository import ConvNextChannelRepository
-from .repository import DenseNetworkChannelRepository
-from .repository import EfficientNetworkChannelRepository
-from .repository import EfficientNetworkV2ChannelRepository
-from .repository import MaxVITChannelRepository
-from .repository import ResidualNetworkChannelRepository
-from .repository import SwinChannelRepository
+from .channel_repository import AlexNetworkChannelRespository
+from .channel_repository import ConvNextChannelRepository
+from .channel_repository import DenseNetworkChannelRepository
+from .channel_repository import EfficientNetworkChannelRepository
+from .channel_repository import EfficientNetworkV2ChannelRepository
+from .channel_repository import MaxVITChannelRepository
+from .channel_repository import ResidualNetworkChannelRepository
+from .channel_repository import SwinChannelRepository
