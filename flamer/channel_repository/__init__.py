@@ -1,4 +1,4 @@
-from .AlexNetworkChannelRespository import AlexNetworkChannelRespository
+from .AlexNetworkChannelRepository import AlexNetworkChannelRepository
 from .ConvNextChannelRepository import ConvNextChannelRepository
 from .DenseNetworkChannelRepository import DenseNetworkChannelRepository
 from .EfficientNetworkChannelRepository import EfficientNetworkChannelRepository
