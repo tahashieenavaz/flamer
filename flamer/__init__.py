@@ -1,6 +1,6 @@
 from importlib.metadata import version
 
-__version__ = version("baloot")
+__version__ = version("flamer")
 
 from .reinforcement_learning import HLGaussLoss
 from .image import LayerNorm2d
