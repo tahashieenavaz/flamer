@@ -10,6 +10,7 @@ from .image import PatchEmbedding as PatchEmbed
 from .loss import BalancedSoftmaxLoss
 from .loss import LearnableLogitNormLoss
 from .loss import LogitNormLoss
+from .normalization import RMSNorm1d
 from .stochastic import StochasticDepth
 from .gated_linear_units import GatedLinearUnit
 from .gated_linear_units import SwiGLU
