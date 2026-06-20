@@ -29,3 +29,5 @@ from .channel_repository import ResidualNetworkChannelRepository
 from .channel_repository import SwinChannelRepository
 
 from .FeedForward import FeedForward
+from .Reshape import Reshape
+from .Permute import Permute
