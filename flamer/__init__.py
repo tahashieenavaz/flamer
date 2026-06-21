@@ -30,6 +30,7 @@ from .channel_repository import ResidualNetworkChannelRepository
 from .channel_repository import SwinChannelRepository
 from .decoy import PrintShape
 from .decoy import PrintMean
+from .decoy import PrintStd
 
 from .FeedForward import FeedForward
 from .Reshape import Reshape
