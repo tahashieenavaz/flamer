@@ -28,6 +28,8 @@ from .channel_repository import EfficientNetworkV2ChannelRepository
 from .channel_repository import MaxVITChannelRepository
 from .channel_repository import ResidualNetworkChannelRepository
 from .channel_repository import SwinChannelRepository
+from .decoy import PrintShape
+from .decoy import PrintMean
 
 from .FeedForward import FeedForward
 from .Reshape import Reshape
