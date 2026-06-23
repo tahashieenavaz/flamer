@@ -31,10 +31,9 @@ from .channel_repository import SwinChannelRepository
 from .decoy import PrintShape
 from .decoy import PrintMean
 from .decoy import PrintStd
+from .siren import Siren
+from .siren import SirenActivation
 
 from .FeedForward import FeedForward
 from .Reshape import Reshape
 from .Permute import Permute
-
-from .siren import Siren
-from .siren import SirenActivation
