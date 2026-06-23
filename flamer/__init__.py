@@ -35,3 +35,6 @@ from .decoy import PrintStd
 from .FeedForward import FeedForward
 from .Reshape import Reshape
 from .Permute import Permute
+
+from .siren import Siren
+from .siren import SirenActivation

@@ -9,11 +9,11 @@ class Siren(torch.nn.Module):
         input_dimension: int,
         hidden_dimension: int,
         output_dimension: int,
-        sine_coefficient: float = 30.0,
+        activation_coefficient: float = 30.0,
     ):
         super().__init__()
-        self.sine_coefficient = sine_coefficient
-        self.activation = SirenActivation(w0=sine_coefficient)
+        self.activation_coefficient = activation_coefficient
+        self.activation = SirenActivation(w0=activation_coefficient)
         self.alpha = torch.nn.Linear(input_dimension, hidden_dimension)
         self.beta = torch.nn.Linear(hidden_dimension, output_dimension)
         self._initialize_weights()
@@ -21,7 +21,7 @@ class Siren(torch.nn.Module):
     @torch.no_grad()
     def _initialize_weights(self):
         b1 = 1 / self.alpha.in_features
-        b2 = math.sqrt(6 / self.beta.in_features) / self.sine_coefficient
+        b2 = math.sqrt(6 / self.beta.in_features) / self.activation_coefficient
         self.alpha.weight.uniform_(-b1, b1)
         self.beta.weight.uniform_(-b2, b2)
 
