@@ -1,12 +1,9 @@
 import torch
-from typing import Optional, Type, Union, TypeAlias
-
-NormalizationLayer: TypeAlias = Union[
-    torch.nn.LayerNorm, torch.nn.RMSNorm, torch.nn.BatchNorm
-]
+from typing import Optional, Type
+from flamer.typing import NormalizationLayer
 
 
-class FeedForward(torch.nn.Module):
+class Stream(torch.nn.Module):
     def __init__(
         self,
         input_dimension: int,

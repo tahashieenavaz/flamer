@@ -33,7 +33,9 @@ from .decoy import PrintMean
 from .decoy import PrintStd
 from .siren import Siren
 from .siren import SirenActivation
+from .streams import Stream
+from .streams import MaskedStream
+from .streams import SoftMaskedStream
 
-from .FeedForward import FeedForward
 from .Reshape import Reshape
 from .Permute import Permute
