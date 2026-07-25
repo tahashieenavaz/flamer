@@ -8,7 +8,7 @@ version = "0.0.01"
 authors = [
   { name="Taha Shieenavaz", email="tahashieenavaz@gmail.com" },
 ]
-description = "My PyTorch modules."
+description = "A collection of well-designed PyTorch modules."
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
@@ -25,7 +25,7 @@ license = { file = "LICENSE" }
 urls = { Homepage="https://github.com/tahashieenavaz/flamer", Repository="https://github.com/tahashieenavaz/flamer", Documentation="https://github.com/tahashieenavaz/flamer#readme" }
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 exclude = ["tests*", "docs*", "figures*", "mermaid*", "scripts*"]
 
 [tool.setuptools.package-data]

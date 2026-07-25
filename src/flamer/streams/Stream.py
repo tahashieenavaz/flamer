@@ -1,6 +1,6 @@
 import torch
 from typing import Optional, Type
-from flamer.typing import NormalizationLayer
+from src.flamer.typing import NormalizationLayer
 
 
 class Stream(torch.nn.Module):
