@@ -1,6 +1,9 @@
 from importlib.metadata import version
 
-__version__ = version("flamer")
+try:
+    __version__ = version("flamer")
+except:
+    __version__ = "development"
 
 from .reinforcement_learning import HLGaussLoss
 from .image import LayerNorm2d
