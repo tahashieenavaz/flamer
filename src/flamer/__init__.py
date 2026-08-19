@@ -1,10 +1,3 @@
-from importlib.metadata import version
-
-try:
-    __version__ = version("flamer")
-except:
-    __version__ = "development"
-
 from .reinforcement_learning import HLGaussLoss
 from .image import LayerNorm2d
 from .image import SqueezeExcitation
@@ -42,3 +35,10 @@ from .streams import SoftMaskedStream
 from .positional_encodings import SinusoidalPositionalEmbeddings
 from .operations.reshape import Reshape
 from .operations.permute import Permute
+
+from importlib.metadata import version
+
+try:
+    __version__ = version("flamer")
+except:
+    __version__ = "development"
