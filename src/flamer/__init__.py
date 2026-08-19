@@ -37,6 +37,5 @@ from .streams import Stream
 from .streams import MaskedStream
 from .streams import SoftMaskedStream
 from .positional_encodings import SinusoidalPositionalEmbeddings
-
-from .Reshape import Reshape
-from .Permute import Permute
+from .operations.reshape import Reshape
+from .operations.permute import Permute
