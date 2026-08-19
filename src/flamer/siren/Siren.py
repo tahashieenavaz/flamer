@@ -1,6 +1,6 @@
 import torch
 import math
-from .SirenActivation import SirenActivation
+from .siren_activation import SirenActivation
 
 
 class Siren(torch.nn.Module):
