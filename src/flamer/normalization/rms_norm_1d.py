@@ -1,5 +1,6 @@
 import torch
 
+
 class RMSNorm1d(torch.nn.Module):
     def __init__(self, channels: int, epsilon: float = 1e-8):
         super().__init__()

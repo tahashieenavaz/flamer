@@ -1,1 +1,1 @@
-from .StochasticDepth import StochasticDepth
+from .stochastic_depth import StochasticDepth

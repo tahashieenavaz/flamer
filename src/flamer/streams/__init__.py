@@ -1,3 +1,3 @@
-from .Stream import Stream
-from .MaskedStream import MaskedStream
-from .SoftMaskedStream import SoftMaskedStream
+from .stream import Stream
+from .masked_stream import MaskedStream
+from .soft_mask_stream import SoftMaskedStream

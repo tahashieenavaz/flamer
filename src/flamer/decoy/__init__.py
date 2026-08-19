@@ -1,3 +1,3 @@
-from .PrintMean import PrintMean
-from .PrintShape import PrintShape
-from .PrintStd import PrintStd
+from .print_mean import PrintMean
+from .print_shape import PrintShape
+from .print_std import PrintStd

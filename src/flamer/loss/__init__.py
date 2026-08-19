@@ -1,3 +1,3 @@
-from .LearnableLogitNormLoss import LearnableLogitNormLoss
-from .LogitNormLoss import LogitNormLoss
-from .BalancedSoftmaxLoss import BalancedSoftmaxLoss
+from .learnable_logit_norm_loss import LearnableLogitNormLoss
+from .logit_norm_loss import LogitNormLoss
+from .balanced_softmax_loss import BalancedSoftmaxLoss

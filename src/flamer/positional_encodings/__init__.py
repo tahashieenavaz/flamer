@@ -1,1 +1,1 @@
-from .SinusoidalPositionalEmbeddings import SinusoidalPositionalEmbeddings
+from .sinusoidal_positional_embedding import SinusoidalPositionalEmbeddings

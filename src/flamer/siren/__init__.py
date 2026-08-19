@@ -1,2 +1,2 @@
-from .Siren import Siren
-from .SirenActivation import SirenActivation
+from .siren import Siren
+from .siren_activation import SirenActivation

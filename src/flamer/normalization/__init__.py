@@ -1,1 +1,1 @@
-from .RMSNorm1d import RMSNorm1d
+from .rms_norm_1d import RMSNorm1d
