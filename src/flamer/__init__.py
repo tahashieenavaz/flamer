@@ -1,7 +1,3 @@
-from importlib.metadata import version
-
-__version__ = version("flamer")
-
 from .reinforcement_learning import HLGaussLoss
 from .image import LayerNorm2d
 from .image import SqueezeExcitation
@@ -13,13 +9,13 @@ from .loss import LogitNormLoss
 from .normalization import RMSNorm1d
 from .stochastic import StochasticDepth
 from .gated_linear_units import GatedLinearUnit
-from .gated_linear_units import SwiGLU
-from .gated_linear_units import ReGLU
-from .gated_linear_units import GeGLU
-from .gated_linear_units import MiGLU
-from .gated_linear_units import CeGLU
-from .gated_linear_units import SeGLU
-from .gated_linear_units import TaGLU
+from .gated_linear_units import SwishGLU
+from .gated_linear_units import ReLUGLU
+from .gated_linear_units import GELUGLU
+from .gated_linear_units import MishGLU
+from .gated_linear_units import CELUGLU
+from .gated_linear_units import SELUGLU
+from .gated_linear_units import TanhGLU
 from .channel_repository import AlexNetworkChannelRepository
 from .channel_repository import ConvNextChannelRepository
 from .channel_repository import DenseNetworkChannelRepository
@@ -39,3 +35,10 @@ from .streams import SoftMaskedStream
 from .positional_encodings import SinusoidalPositionalEmbeddings
 from .operations.reshape import Reshape
 from .operations.permute import Permute
+
+from importlib.metadata import version
+
+try:
+    __version__ = version("flamer")
+except:
+    __version__ = "development"
