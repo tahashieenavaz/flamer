@@ -1,5 +1,4 @@
 from .reinforcement_learning import HLGaussLoss
-from .image import LayerNorm2d
 from .image import SqueezeExcitation
 from .image import PatchEmbedding
 from .image import PatchEmbedding as PatchEmbed
@@ -7,6 +6,7 @@ from .loss import BalancedSoftmaxLoss
 from .loss import LearnableLogitNormLoss
 from .loss import LogitNormLoss
 from .normalization import RMSNorm1d
+from .normalization import LayerNorm2d
 from .stochastic import StochasticDepth
 from .gated_linear_units import GatedLinearUnit
 from .gated_linear_units import SwishGLU
